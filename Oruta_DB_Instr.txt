@@ -1,0 +1,16 @@
+create database secure_cloud;
+use secure_cloud;
+create table sharefiles(sendfrom tinytext,sendto tinytext,msg tinytext,file tinytext,dat tinytext);
+create table user_details(username tinytext not null,passwd tinytext not null,name tinytext not null,gender tinytext not null,phno int(95) not null,email tinytext not null,address tinytext not null,post tinytext,primary key(username(100)));
+create userfiles(username tinytext,filename tinytext,datcreate tinytext);
+create table Encsharefiles(sendfrom tinytext,sendto tinytext,msg tinytext,file tinytext,dat tinytext,ky tinytext,encmsg tinytext);
+create table illegalusers(culprit_username tinytext,act_sender tinytext,act_recvr tinytext,dat tinytext);
+insert into user_details(username,passwd,name,gender,phno,email,address,post) values('Admin101','123456','Admin','male',001,'Admin@admin.com','IND','Admin');
+
+
+
+
+Instructions for Oruta:
+
+1. In Inbox.java there is a variable in constructor cdir change its value according to student computer,make folder at specied place.
+2. In SignUp Serv there is a variable 'cloudfolder=new File("C:\\Oruta");'  in dopost method change value from 'C:\\Secure cloud' to a location at student computer .
