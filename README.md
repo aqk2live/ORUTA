@@ -1,9 +1,9 @@
 # ORUTA
- ORUTA- A Medical records sharing system
+ ORUTA- An online file sharing system
  
- - A Web based portal where a patient can upload a medical records
- - Patient can share medical records with hospitals, clinics or individuals having or not having account on website.
- - An admin which can monitor/manage the users and the files shared.  
+ - A Web based portal where people can share files and documents
+ - An admin which can monitor/manage the users and the files shared.
+ - An auditor profile to check and verify the sharing.    
  - code can integrate with MySQL database. 
  - Refer "Oruta_DB_Instr.txt" file for one time SQL setup details. 
 
